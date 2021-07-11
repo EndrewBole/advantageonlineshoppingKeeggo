@@ -11,7 +11,8 @@ import cucumber.api.junit.Cucumber;
         glue = { "" },
         plugin = {"pretty",
                 "html:target/relatoriosimples",
-                "json:target/relatoriosimples.json"
+                "json:target/relatoriosimples.json",
+                "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/dashBoard.html"
         },
         monochrome = true,
         snippets = SnippetType.CAMELCASE
